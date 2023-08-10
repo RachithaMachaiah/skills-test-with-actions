@@ -1,0 +1,17 @@
+name: Print Secret to Console
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  print-secret:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Print Secret
+        run: echo "My secret value: ${{ secrets.MY_SECRET }}"
