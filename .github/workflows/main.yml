@@ -3,7 +3,7 @@ name: Print Secret to Console
 on:
   push:
     branches:
-      - main
+      - self-hosted
 
 jobs:
   print-secret:
