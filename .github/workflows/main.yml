@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Print Secret
-        run: echo "My secret value: ${{ secrets.My_Secret }}"
+        run: echo "My secret value: ${{ secrets.MY_SECRET }}"
