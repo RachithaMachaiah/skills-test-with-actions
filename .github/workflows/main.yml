@@ -3,11 +3,11 @@ name: Print Secret to Console
 on:
   push:
     branches:
-      - self-hosted
+      - main
 
 jobs:
   print-secret:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: Checkout code
